@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mvn deploy:deploy-file -Durl="${repoDestUrl}" -Dfile="${componentArtifactId}.${componentExtension}" \
+    -DgroupId="${componentGroupId}" -DartifactId="${componentArtifactId}" \
+    -Dpackaging="${componentExtension}" -Dversion="${componentVersion}" \
+    -DrepositoryId=nexus-destination -B ${dComponentClassifier} \
+    --settings settings.xml

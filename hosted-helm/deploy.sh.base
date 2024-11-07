@@ -1,0 +1,7 @@
+#!/bin/bash
+
+curl -k -s -u "${nexusDestId}:${nexusDestPass}" \
+    -X "POST" "$repoDestUrl" \
+    -H "accept: application/json" \
+    -H "Content-Type: multipart/form-data" \
+    -F "helm.asset=@${componentPath}"

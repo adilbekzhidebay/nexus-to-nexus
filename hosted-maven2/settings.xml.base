@@ -1,0 +1,9 @@
+<settings>
+  <servers>
+    <server>
+      <id>nexus-destination</id>
+      <username>${nexusDestId}</username>
+      <password>${nexusDestPass}</password>
+    </server>
+  </servers>
+</settings>

@@ -1,0 +1,7 @@
+*.json
+pom.xml
+settings.xml
+*.jar
+*.module
+*.zip
+deploy.sh
